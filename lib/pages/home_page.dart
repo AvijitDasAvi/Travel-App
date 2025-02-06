@@ -25,24 +25,61 @@ class _HomePageState extends State<HomePage> {
                   fit: BoxFit.cover,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Align(
-                    alignment: Alignment.topRight,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(30.0),
-                      child: Image.asset(
-                        "assets/images/man.jpg",
-                        height: 40.0,
-                        width: 40.0,
-                        fit: BoxFit.cover,
+                  padding: const EdgeInsets.only(
+                    top: 10.0,
+                    left: 20.0,
+                    right: 20.0,
+                  ),
+                  child: Row(
+                    children: [
+                      Material(
+                        elevation: 5.0,
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Container(
+                            padding: EdgeInsets.all(5.0),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8.0)),
+                            child: Image.asset(
+                              "assets/images/world.png",
+                              height: 30.0,
+                              width: 30.0,
+                            )),
                       ),
-                    ),
+                      Spacer(),
+                      Material(
+                        elevation: 5.0,
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Container(
+                          padding: EdgeInsets.all(5.0),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8.0)),
+                          child: Icon(
+                            Icons.add,
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(30.0),
+                        child: Image.asset(
+                          "assets/images/man.jpg",
+                          height: 40.0,
+                          width: 40.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                    top: 60.0,
-                    left: 40.0,
+                    top: 40.0,
+                    left: 20.0,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,7 +97,7 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(
                           fontSize: 25.0,
                           fontWeight: FontWeight.w500,
-                          color: Colors.white54,
+                          color: Colors.white70,
                         ),
                       ),
                     ],
@@ -164,6 +201,9 @@ class _HomePageState extends State<HomePage> {
                               Icons.location_on,
                               color: Colors.green,
                             ),
+                            SizedBox(
+                              width: 5.0,
+                            ),
                             Text(
                               "Sajek Valey, Rangamati",
                               style: TextStyle(
@@ -175,6 +215,51 @@ class _HomePageState extends State<HomePage> {
                           ],
                         ),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          top: 5.0,
+                          left: 10.0,
+                          right: 10.0,
+                        ),
+                        child: Text(
+                          "Adventure awaits! 🌍✈️ Exploring new places, making unforgettable memories. Where should I go next? 🗺️✨ #Wanderlust #TravelDiaries",
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12.0,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          top: 5.0,
+                          left: 10.0,
+                          right: 10.0,
+                          bottom: 10.0,
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.favorite_outline),
+                            Text(
+                              "Like",
+                              style: TextStyle(
+                                color: Colors.black87,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16.0,
+                              ),
+                            ),
+                            Icon(Icons.comment_outlined),
+                            Text(
+                              "Comment",
+                              style: TextStyle(
+                                color: Colors.black87,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
