@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/pages/home_page.dart';
+import 'package:travel_app/pages/top_places.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Travel App",
-      home: HomePage(),
+      home: TopPlaces(),
     );
   }
 }
