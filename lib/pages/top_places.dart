@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/widgets/image_dec.dart';
 
 class TopPlaces extends StatefulWidget {
   const TopPlaces({super.key});
@@ -58,7 +59,7 @@ class _TopPlacesState extends State<TopPlaces> {
                   padding: EdgeInsets.only(
                     top: 30.0,
                     left: 20.0,
-                    right: 20.0,
+                    right: 10.0,
                   ),
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
@@ -72,35 +73,10 @@ class _TopPlacesState extends State<TopPlaces> {
                     children: [
                       Row(
                         children: [
-                          Stack(
-                            children: [
-                              Image.asset(
-                                "assets/images/bali.jpg",
-                                height: 250,
-                                width: 200,
-                                fit: BoxFit.cover,
-                              ),
-                              Container(
-                                padding: EdgeInsets.only(
-                                  top: 10.0,
-                                  left: 10.0,
-                                ),
-                                height: 250,
-                                width: 200,
-                                decoration: BoxDecoration(
-                                  color: Colors.black26,
-                                ),
-                                child: Text(
-                                  "Bali",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20.0,
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
+                          ImageDec()
+                              .buildImageCard("assets/images/bali.jpg", "Bali"),
+                          ImageDec()
+                              .buildImageCard("assets/images/bali.jpg", "Bali"),
                         ],
                       ),
                     ],
