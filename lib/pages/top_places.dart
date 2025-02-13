@@ -58,8 +58,6 @@ class _TopPlacesState extends State<TopPlaces> {
                 child: Container(
                   padding: EdgeInsets.only(
                     top: 30.0,
-                    left: 20.0,
-                    right: 10.0,
                   ),
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
@@ -72,6 +70,25 @@ class _TopPlacesState extends State<TopPlaces> {
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          ImageDec()
+                              .buildImageCard("assets/images/bali.jpg", "Bali"),
+                          ImageDec()
+                              .buildImageCard("assets/images/bali.jpg", "Bali"),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          ImageDec()
+                              .buildImageCard("assets/images/bali.jpg", "Bali"),
+                          ImageDec()
+                              .buildImageCard("assets/images/bali.jpg", "Bali"),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           ImageDec()
                               .buildImageCard("assets/images/bali.jpg", "Bali"),
