@@ -67,36 +67,47 @@ class _TopPlacesState extends State<TopPlaces> {
                       topRight: Radius.circular(30.0),
                     ),
                   ),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          ImageDec()
-                              .buildImageCard("assets/images/bali.jpg", "Bali"),
-                          ImageDec()
-                              .buildImageCard("assets/images/bali.jpg", "Bali"),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          ImageDec()
-                              .buildImageCard("assets/images/bali.jpg", "Bali"),
-                          ImageDec()
-                              .buildImageCard("assets/images/bali.jpg", "Bali"),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          ImageDec()
-                              .buildImageCard("assets/images/bali.jpg", "Bali"),
-                          ImageDec()
-                              .buildImageCard("assets/images/bali.jpg", "Bali"),
-                        ],
-                      ),
-                    ],
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            ImageDec().buildImageCard(
+                                "assets/images/bali.jpg", "Bali"),
+                            ImageDec().buildImageCard(
+                                "assets/images/bangladesh.jpg", "Bangladesh"),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            ImageDec().buildImageCard(
+                                "assets/images/dubai.jpg", "Dubai"),
+                            ImageDec().buildImageCard(
+                                "assets/images/india.jpg", "India"),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            ImageDec().buildImageCard(
+                                "assets/images/maldives.jpg", "Maldives"),
+                            ImageDec().buildImageCard(
+                                "assets/images/malaysia.jpg", "Malaysia"),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
